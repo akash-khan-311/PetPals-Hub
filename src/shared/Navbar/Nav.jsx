@@ -7,6 +7,7 @@ import {
   import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../../assets/images/logo.png'
    
   function NavList() {
     return (
@@ -77,7 +78,7 @@ import { Link } from "react-router-dom";
           >
             <Link to={'/'}>
             
-            <img src="" alt="logo" />
+            <img width={200} src={logo} alt="logo" />
             </Link>
           </Typography>
           <div className="hidden lg:block">
