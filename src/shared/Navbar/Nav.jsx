@@ -71,7 +71,7 @@ import logo from '../../assets/images/logo.png'
     }, []);
    
     return (
-      <nav className="border-b-2  border-red-600 py-3">
+      <nav className="py-3">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             className="mr-4 cursor-pointer py-1.5"
