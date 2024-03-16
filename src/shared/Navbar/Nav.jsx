@@ -6,6 +6,7 @@ import {
   } from "@material-tailwind/react";
   import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
    
   function NavList() {
     return (
@@ -16,9 +17,9 @@ import { useEffect, useState } from "react";
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-            Pages
-          </a>
+          <Link to={'/'} className="flex items-center hover:text-blue-500 transition-colors">
+            Home
+          </Link>
         </Typography>
         <Typography
           as="li"
@@ -26,9 +27,9 @@ import { useEffect, useState } from "react";
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-            Account
-          </a>
+          <Link to={'/petlisting'} className="flex items-center hover:text-blue-500 transition-colors">
+            Pet Listing
+          </Link>
         </Typography>
         <Typography
           as="li"
@@ -36,9 +37,9 @@ import { useEffect, useState } from "react";
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-            Blocks
-          </a>
+          <Link to={'/donationcampaign'} className="flex items-center hover:text-blue-500 transition-colors">
+            Donation Campaign
+          </Link>
         </Typography>
         <Typography
           as="li"
@@ -46,9 +47,9 @@ import { useEffect, useState } from "react";
           color="blue-gray"
           className="p-1 font-medium"
         >
-          <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
-            Docs
-          </a>
+          <Link to={'/login'} className="flex items-center hover:text-blue-500 transition-colors">
+            Login
+          </Link>
         </Typography>
       </ul>
     );
@@ -72,12 +73,12 @@ import { useEffect, useState } from "react";
       <nav className="border-b-2  border-red-600 py-3">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
-            as="a"
-            href="#"
-            variant="h6"
             className="mr-4 cursor-pointer py-1.5"
           >
-            Material Tailwind
+            <Link to={'/'}>
+            
+            <img src="" alt="logo" />
+            </Link>
           </Typography>
           <div className="hidden lg:block">
             <NavList />
